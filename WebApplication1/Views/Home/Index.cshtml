@@ -1,0 +1,31 @@
+﻿@{
+    string name = "site";
+    int number = 12;
+    int[] mass = new int[] { 1, 3, 4, 6, 7 };
+    bool flag = false;
+
+    //class person
+    //{
+    //    int id = 7;
+    //    string name = "site goji satori";
+    //}
+}
+
+<head>
+    <link href="~/wwwroot/css/Index.css" rel="stylesheet" />
+</head>
+<p>@name</p>
+
+@if(flag)
+{
+    <p>false</p>
+}
+else
+{
+    <p>true</p>
+}
+
+@foreach(var item in mass)
+{
+    <p>@item</p>
+}
